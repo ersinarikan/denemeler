@@ -15,11 +15,11 @@ public class kared {
 		if (k1 == k2) {
 			System.out.println("Bu bir Karedir");
 			System.out.println("Bu karenin Çevresini hesaplamak için (C) Alanını hesaplamak için (A) giriniz : ");
-			char k = giris.nextLine().charAt(0);
+			char k = giris.next().charAt(0);
 			int cevre = (2 * (k1 + k2));
-			if (k == 'C' ) {
+			if (k == 'C' || k=='c' ) {
 				System.out.println("Bu karenin çevresi = " + cevre);
-			} else if (k == 'A') {
+			} else if (k == 'A'|| k=='a') {
 				int alan = (k1 * k2);
 				System.out.println("Bu karenin alanı = " + alan);
 			}
@@ -27,11 +27,11 @@ public class kared {
 		} else {
 			System.out.println("Bu bir dikdörtgendir");
 			System.out.println("Bu Dikdörtgenin Çevresini hesaplamak için (C) Alanını hesaplamak için (A) giriniz ");
-			char d = giris.nextLine().charAt(0);
-			if (d == 'C') {
+			char d = giris.next().charAt(0);
+			if (d == 'C'|| d=='c') {
 				int cevred = 2 * (k1 + k2);
 				System.out.println("Bu dikdörgenin Çevresi = " + cevred);
-			} else if (d == 'A') {
+			} else if (d == 'A' || d=='a') {
 				int aland = k1 * k2;
 				System.out.println("Bu dikdörgenin Alanı = " + aland);
 			}
