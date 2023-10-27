@@ -1,16 +1,17 @@
 package hafta2;
 
 import java.util.Scanner;
+//test//
 
 public class HesapMakinasi {
 
 	public static void main(String[] args) {
 		Scanner giris = new Scanner(System.in);
-		System.out.println("Birinci sayý");
+		System.out.println("Birinci sayï¿½");
 		float s1 = giris.nextFloat();
-		System.out.println("Ýkinci sayý");
+		System.out.println("ï¿½kinci sayï¿½");
 		float s2 = giris.nextFloat();
-		System.out.println("1-Toplama\n2-Çýkarma\n3-Çarpma\n4-Bölme");
+		System.out.println("1-Toplama\n2-ï¿½ï¿½karma\n3-ï¿½arpma\n4-Bï¿½lme");
 		byte menu = giris.nextByte();
 		switch (menu) {
 		case 1:
@@ -22,18 +23,18 @@ public class HesapMakinasi {
 		case 3:
 			System.out.println(s1 + " * " + s2 + " = " + (s1 * s2));
 			break;
-		case 4:
+		 case 4:
 			System.out.println(s1 + " / " + s2 + " = " + (s1 / s2));
 			break;
 		default:
-			System.out.println("yanlýþ iþlem seçimi");
+			System.out.println("yanlï¿½ï¿½ iï¿½lem seï¿½imi");
 		}
 		/*
 		 * if (menu == 1) System.out.println(s1 + " + " + s2 + " = " + (s1 + s2)); else
 		 * if (menu == 2) System.out.println(s1 + " - " + s2 + " = " + (s1 - s2)); else
 		 * if (menu == 3) System.out.println(s1 + " * " + s2 + " = " + (s1 * s2)); else
 		 * if (menu == 4) System.out.println(s1 + " / " + s2 + " = " + (s1 / s2)); else
-		 * System.out.println("yanlýþ iþlem seçimi");
+		 * System.out.println("yanlï¿½ï¿½ iï¿½lem seï¿½imi");
 		 */
 	}
 
