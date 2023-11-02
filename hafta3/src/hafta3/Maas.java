@@ -1,3 +1,5 @@
+package hafta3;
+
 import java.util.Scanner;
 
 public class Maas {
@@ -10,11 +12,11 @@ public class Maas {
 		String mDurum;
 		char kontrol = 'e';
 		do {
-			System.out.println("Ýsim giriniz : ");
+			System.out.println("ï¿½sim giriniz : ");
 			ad = giris.next();
-			System.out.println("MAaþ giriniz : ");
+			System.out.println("MAaï¿½ giriniz : ");
 			maas = giris.nextInt();
-			System.out.println("Çocuk sayýsý giriniz : ");
+			System.out.println("ï¿½ocuk sayï¿½sï¿½ giriniz : ");
 			cocukSayisi = giris.nextByte();
 			if (cocukSayisi >= 3)
 				cocukSayisi = 3;
@@ -24,7 +26,7 @@ public class Maas {
 			mDurum = giris.next();
 			if (mDurum.equalsIgnoreCase("evli"))
 				maas += 500;
-			System.out.println(ad + " maaþýn " + maas + " TL dir.");
+			System.out.println(ad + " maaï¿½ï¿½n " + maas + " TL dir.");
 			System.out.println("devam edecekmisiniz (e/h)");
 			kontrol = giris.next().charAt(0);
 		} while (kontrol == 'e' || kontrol=='E');

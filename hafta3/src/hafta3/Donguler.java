@@ -1,15 +1,16 @@
+package hafta3;
 
 public class Donguler {
 
 	public static void main(String[] args) {
 		/*
 		 * for (int i = 1; i <= 5; i += 1) { System.out.println(i +
-		 * " Okan üniversitesi"); }
+		 * " Okan ï¿½niversitesi"); }
 		 * 
 		 * for (int i = 0; i <= 10; i++) { // if (i==3 || i==6) continue; // if (i==5)
-		 * break; if (i % 2 == 1) continue; System.out.println(i); if (i == 6) break; }
+		 * break;  if (i % 2 == 1) continue; System.out.println(i); if (i == 6) break; }
 		 */
-		System.out.println("Do döngüsü");
+		System.out.println("Do dï¿½ngï¿½sï¿½");
 		int i = 0;
 		do {
 			i++;
@@ -21,7 +22,7 @@ public class Donguler {
 			
 		} while (i <= 10);
 		i=0;
-		System.out.println("While döngüsü "+i);
+		System.out.println("While dï¿½ngï¿½sï¿½ "+i);
 		while(i <= 10) {
 			i++;
 			if (i % 2 == 1)
