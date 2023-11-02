@@ -24,7 +24,7 @@ public class fatura {
 			telefonNumarasi = giris.next();
 			
 //			  if (telefonNumarasi=="") 
-//			  { System.out. println("Bir telefon numarası girmediniz. Hesaplamaya devam edebilmek için bir numara girmelisiniz." ); 
+//			  { System.out. pr intln("Bir telefon numarası girmediniz. Hesaplamaya devam edebilmek için bir numara girmelisiniz." ); 
 //			  	while(telefonNumarasi=="") 
 //			  	{ 
 //			  		System.out. println("Bir telefon numarası girmediniz. Hesaplamaya devam edebilmek için bir numara girmelisiniz."); 
