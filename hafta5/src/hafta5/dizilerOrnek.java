@@ -94,6 +94,8 @@ public class dizilerOrnek {
 					if (maas[j] < ekm) {
 						ekm = maas[j];
 						ekmk = ad[j];
+					System.out.println(ad[j]);
+					System.out.println(ekmk);
 					}
 				}
 				System.out.println("En Az Maaş " + ekm + " ile syn " + ekmk + "'nindir");
