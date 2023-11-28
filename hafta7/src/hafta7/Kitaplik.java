@@ -1,9 +1,11 @@
+package hafta7;
+
 import java.util.Scanner;
 
 public class Kitaplik {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
-		System.out.print("Kaç kitap girilecek");
+		System.out.print("Kaï¿½ kitap girilecek");
 		int uzunluk = scanner.nextInt();
 		String kitapAdi[] = new String[uzunluk];
 		String yazarAdi[] = new String[uzunluk];
@@ -12,9 +14,9 @@ public class Kitaplik {
 		int ks = 0;
 		int secim = 0;
 		do {
-			System.out.println("1-Kayýt giriþi\n2-Listeleme\n3-Yazar Adý arama\n4-En Yeni Kitaplar");
-			System.out.println("5-Toplam Kitap Sayýsý\n6-Sayfa Sayýsý ortalamasý\n7-Basým yýlý ortalamasý");
-			System.out.println("8-aranan yazarýn en çok sayfalý kitabý nedir.\n9-Çýkýþ");
+			System.out.println("1-Kayï¿½t giriï¿½i\n2-Listeleme\n3-Yazar Adï¿½ arama\n4-En Yeni Kitaplar");
+			System.out.println("5-Toplam Kitap Sayï¿½sï¿½\n6-Sayfa Sayï¿½sï¿½ ortalamasï¿½\n7-Basï¿½m yï¿½lï¿½ ortalamasï¿½");
+			System.out.println("8-aranan yazarï¿½n en ï¿½ok sayfalï¿½ kitabï¿½ nedir.\n9-ï¿½ï¿½kï¿½ï¿½");
 
 			secim = scanner.nextInt();
 			switch (secim) {
@@ -24,7 +26,7 @@ public class Kitaplik {
 					ks++;
 
 				} else {
-					System.out.println("Dizi dolu, yeni kitap kaydý girilmez.");
+					System.out.println("Dizi dolu, yeni kitap kaydï¿½ girilmez.");
 				}
 				break;
 			case 2:
@@ -32,7 +34,7 @@ public class Kitaplik {
 					FonkKitaplik.Listele(kitapAdi[i], yazarAdi[i], sayfaSayisi[i], basimYili[i]);
 				break;
 			case 3:
-				System.out.print("Hangi Yazarýn Kitaplarý : ");
+				System.out.print("Hangi Yazarï¿½n Kitaplarï¿½ : ");
 				String aY = scanner.next();
 				System.out.println("aranan yazar : " + aY);
 				FonkKitaplik.YazarArama(kitapAdi, yazarAdi, sayfaSayisi, basimYili, aY);
@@ -41,13 +43,13 @@ public class Kitaplik {
 				FonkKitaplik.EnYeniKitaplar(kitapAdi, yazarAdi, sayfaSayisi, basimYili);
 				break;
 			case 5:
-				System.out.println("Kütüphanedeki toplam kitap sayýsý : " + ks);
+				System.out.println("Kï¿½tï¿½phanedeki toplam kitap sayï¿½sï¿½ : " + ks);
 				break;
 			case 9:
 				System.out.println("Program bitti");
 				System.exit(0);
 			default:
-				System.out.println("Yanlýþ menü deðeri");
+				System.out.println("Yanlï¿½ï¿½ menï¿½ deï¿½eri");
 			}
 		} while (secim != 10);
 	}

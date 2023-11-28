@@ -1,3 +1,4 @@
+package hafta7;
 import java.util.Scanner;
 
 public class FonkKitaplik {
@@ -5,21 +6,21 @@ public class FonkKitaplik {
 	public static void kitapEkle(Scanner scanner, String[] kitapAdi, String[] yazarAdi, int[] sayfaSayisi,
 			int[] basimYili, int ks) {
 		scanner.nextLine();
-		System.out.print("Kitap adý : ");
+		System.out.print("Kitap adï¿½ : ");
 		kitapAdi[ks] = scanner.nextLine();
-		System.out.print("Yazar adý : ");
+		System.out.print("Yazar adï¿½ : ");
 		yazarAdi[ks] = scanner.nextLine();
-		System.out.print("Sayfa Sayýsý");
+		System.out.print("Sayfa Sayï¿½sï¿½");
 		sayfaSayisi[ks] = scanner.nextInt();
-		System.out.print("Basým yýlý");
+		System.out.print("Basï¿½m yï¿½lï¿½");
 		basimYili[ks] = scanner.nextInt();
 	}
 
 	public static void Listele(String kitapAdi, String yazarAdi, int sayfaSayisi, int basimYili) {
-		System.out.println("Kitap adý: " + kitapAdi);
-		System.out.println("Yazar adý: " + yazarAdi);
-		System.out.println("Basým Yýlý : " + basimYili);
-		System.out.println("Sayfa Sayýsý : " + sayfaSayisi);
+		System.out.println("Kitap adï¿½: " + kitapAdi);
+		System.out.println("Yazar adï¿½: " + yazarAdi);
+		System.out.println("Basï¿½m Yï¿½lï¿½ : " + basimYili);
+		System.out.println("Sayfa Sayï¿½sï¿½ : " + sayfaSayisi);
 		System.out.println("---------------------------------");
 	}
 
@@ -45,7 +46,7 @@ public class FonkKitaplik {
 			}
 			Listele(kitapAdi[yilindex], yazarAdi[yilindex], sayfaSayisi[yilindex], basimYili[yilindex]);
 		} else {
-			System.out.println("Hiç kitap girilmemiþ");
+			System.out.println("Hiï¿½ kitap girilmemiï¿½");
 		}
 
 	}

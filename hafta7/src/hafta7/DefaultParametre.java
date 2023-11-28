@@ -1,4 +1,4 @@
-
+package hafta7;
 public class DefaultParametre {
 	
 	public static void main(String[] args) {
@@ -9,7 +9,7 @@ public class DefaultParametre {
 
 	private static void selam(String isim) {
 		if(isim==null || isim.isEmpty()) {
-			isim="Boþ";
+			isim="Boï¿½";
 		}
 		System.out.println("MErhaba "+isim);
 		

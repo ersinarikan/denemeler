@@ -1,4 +1,4 @@
-
+package hafta7;
 public class Faktoriyel {
  public static int Faktoriyel(int n) {
 	 if(n==0 || n==1)
@@ -10,7 +10,7 @@ public class Faktoriyel {
 	public static void main(String[] args) {
 		int sayi=5;
 		int sonuc=Faktoriyel(sayi);
-		System.out.println(sayi+" nýn faktöriyeli "+sonuc+" dur.");
+		System.out.println(sayi+" nï¿½n faktï¿½riyeli "+sonuc+" dur.");
 
 
 	}

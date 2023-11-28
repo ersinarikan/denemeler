@@ -1,11 +1,11 @@
-
+package hafta7;
 public class EsnekParametre {
 	public static void Toplama (int... sayilar) {
 		int toplam=0;
 		for (int sayi : sayilar) {
 			toplam+=sayi;
 		}
-		System.out.println("Sayilarýn toplamý : "+toplam);
+		System.out.println("Sayilarï¿½n toplamï¿½ : "+toplam);
 	}
 	public static void main(String[] args) {
 		Toplama(1,3);
