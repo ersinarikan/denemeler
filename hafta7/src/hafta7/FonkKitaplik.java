@@ -82,7 +82,7 @@ public class FonkKitaplik {
 				if (sayfaSayisi[j] > ecss) {
 					ecss = sayfaSayisi[j];
 				}
-			}else System.out.println("Böyle bir yazar bulamadık"); //break de çalışıyor ama mesaj çıkmıyor HOCAYA Sor.
+			}else System.out.println("Böyle bir yazar bulamadık"); //if de break de çalıştı ama mesaj çıkmıyor HOCAYA SOR.
 			
 		}
 		System.out.println("yazar " + arananYazar8 + "'ın yazdığı en çok sayfali kitap :" + ecss + " sayfadır");
@@ -90,6 +90,7 @@ public class FonkKitaplik {
 */	
 	public static void ecsKitap(String[] yazarAdi, int[] sayfaSayisi, String arananYazar8) {
 		int ecss = 0;
+		
 		for (int j = 0; j < sayfaSayisi.length; j++) {
 			if (yazarAdi[j].equalsIgnoreCase(arananYazar8) && (sayfaSayisi[j] > ecss)) {
 				ecss = sayfaSayisi[j];
@@ -99,7 +100,7 @@ public class FonkKitaplik {
 			System.out.println("Yazar " + arananYazar8 + "'ın yazdığı en kalın kitap " + ecss + " sayfadır");
 		} else {
 			System.out.println("Böyle bir yazar bulamadık");
-			System.out.println("Sadece Aşağıdaki yazar isimlerini kullanabilirsin");
+			System.out.println("Sadece Aşağıdaki yazar isimlerini kullanabilirsin"); //tekrar eden yazar isimleri HOCAYA SOR
 			for (int i = 0; i < sayfaSayisi.length; i++) {
 			System.out.println(yazarAdi[i]);	
 				
