@@ -78,7 +78,7 @@ public class FonkKitaplik {
 		int ecss=sayfaSayisi[0] // int ecss = 0; 
 		for (int j = 0; j < sayfaSayisi.length; j++) {
 
-			if (yazarAdi[j].equalsIgnoreCase(arananYazar8)) {
+			if (yazarAdi[j].equalsIgnoreCase(arananYazar8)) { //!yazarAdi tekrar if olmadı HOCAYA SOR
 				if (sayfaSayisi[j] > ecss) {
 					ecss = sayfaSayisi[j];
 				}
