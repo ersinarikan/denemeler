@@ -73,18 +73,38 @@ public class FonkKitaplik {
 
 	}
 
-	public static void ecsKitap(String[] yazarAdi, int[] sayfaSayisi, String arananYazar8) {
+/* public static void ecsKitap(String[] yazarAdi, int[] sayfaSayisi, String arananYazar8) {
 		
-		int ecss = 0;
+		int ecss=sayfaSayisi[0] // int ecss = 0; 
 		for (int j = 0; j < sayfaSayisi.length; j++) {
 
 			if (yazarAdi[j].equalsIgnoreCase(arananYazar8)) {
 				if (sayfaSayisi[j] > ecss) {
 					ecss = sayfaSayisi[j];
 				}
-			}
+			}else System.out.println("Böyle bir yazar bulamadık"); //break de çalışıyor ama mesaj çıkmıyor HOCAYA Sor.
 			
 		}
-		System.out.println("yazar " + arananYazar8 + "'ın yazdığı en kalın kitap :" + ecss + " sayfadır");
+		System.out.println("yazar " + arananYazar8 + "'ın yazdığı en çok sayfali kitap :" + ecss + " sayfadır");
 	}
+*/	
+	public static void ecsKitap(String[] yazarAdi, int[] sayfaSayisi, String arananYazar8) {
+		int ecss = 0;
+		for (int j = 0; j < sayfaSayisi.length; j++) {
+			if (yazarAdi[j].equalsIgnoreCase(arananYazar8) && (sayfaSayisi[j] > ecss)) {
+				ecss = sayfaSayisi[j];
+			}
+		}
+		if (ecss > 0) {
+			System.out.println("Yazar " + arananYazar8 + "'ın yazdığı en kalın kitap " + ecss + " sayfadır");
+		} else {
+			System.out.println("Böyle bir yazar bulamadık");
+			System.out.println("Sadece Aşağıdaki yazar isimlerini kullanabilirsin");
+			for (int i = 0; i < sayfaSayisi.length; i++) {
+			System.out.println(yazarAdi[i]);	
+				
+			}
+		}
+	}
+
 }
