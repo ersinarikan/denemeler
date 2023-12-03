@@ -8,13 +8,13 @@ public class Fonksiyon {
 	public static void KayitEkle(Scanner scanner, List<String> adListesi, List<Byte> vizeListesi,
 			List<Byte> finalListesi) {
 		scanner.nextLine();
-		System.out.println("�sim giriniz : ");
+		System.out.println("isim giriniz : ");
 		adListesi.add(scanner.next());
 		System.out.println("Vize Notu gir");
 		vizeListesi.add(scanner.nextByte());
 		System.out.println("Final Notu gir");
 		finalListesi.add(scanner.nextByte());
-		System.out.println(adListesi.get(adListesi.size() - 1) + " Kayd�n�  girdiniz");
+		System.out.println(adListesi.get(adListesi.size() - 1) + " Kaydını  girdiniz");
 	}
 
 	public static void Listele(List<String> adListesi, List<Byte> vizeListesi, List<Byte> finalListesi) {
@@ -25,10 +25,10 @@ public class Fonksiyon {
 	}
 
 	private static void yazdir(String ad, Byte vn, Byte fn) {
-		System.out.println("�sminiz : " + ad);
+		System.out.println("isminiz : " + ad);
 		System.out.println("Vize notunuz : " + vn);
 		System.out.println("Final notunuz : " + fn);
-		System.out.println("Ba�ar� notunuz : " + (vn * .4 + fn * .6));
+		System.out.println("Başarı notunuz : " + (vn * .4 + fn * .6));
 		System.out.println("------------------------------------");
 	}
 
