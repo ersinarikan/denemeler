@@ -210,21 +210,7 @@ public class Toptancid {
 				break;
 
 			case 3: // Rapor
-				int toplamMercimek = 0;
-				int toplamNohut = 0;
-				int toplamPirinc = 0;
-				for (int i = 0; i < Mercimek.size(); i++) {
-					toplamMercimek = Mercimek.get(i) + toplamMercimek;
-				}
-				for (int i = 0; i < Nohut.size(); i++) {
-					toplamNohut = Nohut.get(i) + toplamNohut;
-				}
-				for (int i = 0; i < Pirinc.size(); i++) {
-					toplamPirinc = Pirinc.get(i) + toplamPirinc;
-				}
-				System.out.println("Depodaki Toplam Mercimek Miktarı " + toplamMercimek + " KG dır");
-				System.out.println("Depodaki Toplam Nohut Miktarı " + toplamNohut + " KG dır");
-				System.out.println("Depodaki Toplam Pirinç Miktarı " + toplamPirinc + " KG dır");
+				fonkToptanci.rapor(Nohut,Mercimek,Pirinc);
 				break;
 
 			default:
