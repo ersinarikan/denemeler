@@ -1,12 +1,11 @@
 package hazirlik;
 
-import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Scanner;
 
-class Kisi implements Serializable {
+class Kisi {
 	private String ad;
 	private String soyad;
 	private int yas;
@@ -50,7 +49,7 @@ class Kisi implements Serializable {
 
 }
 
-class Calisan extends Kisi implements Serializable {
+class Calisan extends Kisi  {
 	private String gorev;
 	private double maas;
 
