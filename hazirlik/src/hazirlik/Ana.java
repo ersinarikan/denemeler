@@ -11,8 +11,6 @@
 //11. Uygulamayı yazmaya başlıyoruz.
 
 package hazirlik;
-
-import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -21,7 +19,7 @@ import java.util.Scanner;
 import hazirlik.Ozellikler.Araba;
 
 //1.
-class Ozellikler implements Serializable {
+class Ozellikler  {
 	// 2.
 	private String renk;
 	private String marka;
@@ -77,7 +75,7 @@ class Ozellikler implements Serializable {
 	}
 
 	// 6.
-	static class Araba extends Ozellikler implements Serializable {
+	static class Araba extends Ozellikler {
 		// 7.
 		private String motor;
 		private String kullAmaci;
